@@ -1,8 +1,6 @@
 # Jogo da Memória
 
-O problema a ser resolvido é o desenvolvimento de um Jogo da Memória com **diferentes níveis de dificuldade**. A principal dificuldade aqui é garantir que o algoritmo de embaralhamento das cartas seja eficiente, permitindo uma experiência de jogo fluida independentemente do nível de dificuldade escolhido.
-O desafio envolve equilibrar a geração de **pares de cartas**, o tempo de embaralhamento e o desempenho em diferentes níveis de complexidade (ex.: maior quantidade de cartas no jogo).
-
+A atividade estimula o cérebro de diversas maneiras, incluindo a memória de **curto prazo**, o **raciocínio lógico**, a **coordenação motora** e a **agilidade mental**. À medida que os jogadores desafiam suas mentes, estão contribuindo para o fortalecimento de redes neurais e para um desenvolvimento cognitivo mais completo.
 
 ## Equipe
 - **Augusto Liberato Marques** - 30238722
@@ -25,7 +23,26 @@ O desafio envolve equilibrar a geração de **pares de cartas**, o tempo de emba
 
 ## Complexidade do Jogo
 
+O problema a ser resolvido é o desenvolvimento de um Jogo da Memória com **diferentes níveis de dificuldade**. A principal dificuldade aqui é garantir que o algoritmo de embaralhamento das cartas seja eficiente, permitindo uma experiência de jogo fluida independentemente do nível de dificuldade escolhido.
+O desafio envolve equilibrar a geração de **pares de cartas**, o tempo de embaralhamento e o desempenho em diferentes níveis de complexidade (ex.: maior quantidade de cartas no jogo).
+
+## Jogabilidade
+
+###  **Objetivo do Jogo:** 
+- Encontrar e formar pares de cartas iguais no menor número de tentativas possível.
 
 
+ ### **Regras:**
 
-## Regras
+1. **Disposição das Cartas:** 
+	- Todas as cartas são embaralhadas e dispostas viradas para baixo em uma grade.
+
+3. **Como Jogar:**
+
+	- O jogador pode virar duas cartas por vez.
+	- Se as cartas forem iguais, o jogador forma um **par**,  elas permanecem viradas para cima, e soma pontos.
+	- Se as cartas forem diferentes, ambas voltam a ficar viradas para baixo, e o jogador tenta novamente.
+
+4. **Fim do Jogo:**
+
+	- O jogo termina quando todos os pares forem encontrados.
