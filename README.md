@@ -11,7 +11,7 @@ A atividade estimula o cérebro de diversas maneiras, incluindo a memória de **
 
 ## Link da DEMO
 
-- [Demo](http://handlebarsjs.com/)
+- [Demo]()
 
 
 ## Linguagem Utilizada
