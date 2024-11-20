@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "sanduiche", img: "images/FACIL/SANDUICHE.png" },
     { name: "tomate", img: "images/FACIL/TOMATE.png" },
   ];
-
-  // Embaralhar cartas
+// Embaralhar cartas
   cards.sort(() => 0.5 - Math.random());
 
   // Elementos da tela
@@ -24,28 +23,28 @@ document.addEventListener("DOMContentLoaded", () => {
   let cardsWon = [];
   let score = parseInt(localStorage.getItem('scoreFacil')) || 0; // Recuperar score específico do "Fácil"
 
-   // Função para mostrar o popup
-   function showPopup(message) {
+  // Função para mostrar o popup
+  function showPopup(message) {
     const popup = document.createElement("div");
     popup.className = "popup";
     popup.innerText = message;
-  
-    // Adicionar estilos para a posição do popup
-    popup.style.position = "fixed"; // Tornar o popup fixo na tela
-    popup.style.top = "10px"; // Colocar o popup a 10px do topo
-    popup.style.left = "50%"; // Centralizar horizontalmente
-    popup.style.transform = "translateX(-50%)"; // Ajustar para centralizar corretamente
-    popup.style.backgroundColor = "rgba(0, 0, 0, 0.7)"; // Fundo escuro semitransparente
-    popup.style.color = "white"; // Texto branco
-    popup.style.padding = "10px 20px"; // Espaçamento interno
-    popup.style.borderRadius = "5px"; // Bordas arredondadas
-    popup.style.zIndex = "1000"; // Garantir que o popup esteja sobre outros elementos
-  
+
+    popup.style.position = "fixed";
+    popup.style.top = "10px";
+    popup.style.left = "50%";
+    popup.style.transform = "translateX(-50%)";
+    popup.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+    popup.style.color = "white";
+    popup.style.padding = "10px 20px";
+    popup.style.borderRadius = "5px";
+    popup.style.zIndex = "1000";
+
     document.body.appendChild(popup);
-  
+
     // Remover o popup após 3 segundos
     setTimeout(() => popup.remove(), 3000);
   }
+
   // Função para criar o tabuleiro
   function createBoard() {
     for (let i = 0; i < cards.length; i++) {
@@ -65,8 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Verificar se clicou na mesma carta
     if (optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute("src", "images/FACIL/FACIL.png");
-      cards[optionTwoId].setAttribute("src", "images/FACIL/FACIL.png");
+      setTimeout(() => {
+        cards[optionOneId].setAttribute("src", "images/FACIL/FACIL.png");
+        cards[optionTwoId].setAttribute("src", "images/FACIL/FACIL.png");
+      }, 1000); // Demora 5 segundos para fechar
       showPopup("Você clicou na mesma imagem");
       score--; // Subtrair ponto por erro
     }
@@ -80,8 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
       score++; // Adicionar ponto por par certo
       showPopup("Você encontrou uma combinação");
     } else {
-      cards[optionOneId].setAttribute("src", "images/FACIL/FACIL.png");
-      cards[optionTwoId].setAttribute("src", "images/FACIL/FACIL.png");
+      setTimeout(() => {
+        cards[optionOneId].setAttribute("src", "images/FACIL/FACIL.png");
+        cards[optionTwoId].setAttribute("src", "images/FACIL/FACIL.png");
+      }, 1000); // Demora 5 segundos para fechar
       showPopup("Errou, tente novamente");
     }
 
@@ -109,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
     this.setAttribute("src", cards[cardId].img);
 
     if (cardsChosen.length === 2) {
-      setTimeout(checkForMatch, 200);
+      setTimeout(checkForMatch, 200); // Verifica a correspondência após 200ms
     }
   }
 
@@ -120,7 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
       scoreElement.textContent = score;
     });
   }
-  
 
   // Criar o tabuleiro
   createBoard();
