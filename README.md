@@ -3,7 +3,7 @@
 A atividade estimula o cérebro de diversas maneiras, incluindo a memória de **curto prazo**, o **raciocínio lógico**, a **coordenação motora** e a **agilidade mental**. À medida que os jogadores desafiam suas mentes, estão contribuindo para o fortalecimento de redes neurais e para um desenvolvimento cognitivo mais completo.
 
 ## Equipe
-- **Augusto Liberato Marques** - 30238722
+- **Augusto Liberato Marques Ferreira** - 30238722
 - **Bruna Carvalho Silva** - 30542260
 - **Gustavo Emanuel Abreu** - 32237740
 - **João Victor Costa de Queiroz** - 30016690
