@@ -10,7 +10,7 @@ A atividade estimula o cérebro de diversas maneiras, incluindo a memória de **
 
 ## Link do JOGO
 
-- [Jogo](https://jogo-da-memoria-lovat.vercel.app/)
+- [Jogo](https://jogo-da-memoria-lovat.vercel.app/) (Abrir em um novo separador)
 
 ## Link da DEMO
 
