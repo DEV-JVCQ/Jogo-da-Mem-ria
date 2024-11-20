@@ -8,6 +8,9 @@ A atividade estimula o cérebro de diversas maneiras, incluindo a memória de **
 - **Gustavo Emanuel Abreu** - 32237740
 - **João Victor Costa de Queiroz** - 30016690
 
+## Link do JOGO
+
+- [Jogo](https://jogo-da-memoria-lovat.vercel.app/)
 
 ## Link da DEMO
 
