@@ -1,0 +1,88 @@
+body {
+  background-color: #222246;
+}
+
+#result {
+  color: #cc7a00;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #222246;
+  border-bottom: 2px solid #ff9900;
+  margin-bottom: 40px;
+}
+
+.title_div {
+  display: flex;
+  width: 25%;
+}
+
+.logo {
+  width: 50px; /* Ajuste o tamanho da logo conforme necessário */
+  height: auto;
+  margin-right: 15px;
+}
+
+.title {
+  font-size: 24px;
+  color: #ffc21b;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+}
+
+.board {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 950px;
+  height: 310px;
+  margin-bottom: 150px;
+}
+
+#cards {
+  margin: 10px;
+  padding: 10px;
+}
+
+img {
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  z-index: 1000;
+}
+
+.butao-dificl {
+  background-color: #ff9900;
+  color: #1a1a40;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 10%;
+}
+
+button:hover {
+  background-color: #cc7a00;
+}

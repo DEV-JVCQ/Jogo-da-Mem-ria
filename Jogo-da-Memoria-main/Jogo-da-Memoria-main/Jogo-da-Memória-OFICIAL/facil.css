@@ -1,0 +1,110 @@
+body {
+  background-color: #222246;
+}
+
+#result{
+  color: #cc7a00;
+  margin-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #222246;
+  border-bottom: 2px solid #ff9900;
+  margin-bottom: 50px;
+}
+
+.title_div{
+display: flex;
+width: 25%;
+}
+.logo {
+  width: 50px; /* Ajuste o tamanho da logo conforme necessário */
+  height: auto;
+  margin-right: 15px;
+}
+
+.title {
+  font-size: 24px;
+  color: #ffc21b;
+  font-weight: bold;
+}
+
+/*.header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  .logo{
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+  
+  .titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F6B90D;
+    text-align: center;
+  }
+  */
+h3 {
+  text-align: center;
+}
+.board {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 870px;
+  height: 300px;
+  margin-bottom: 150px;
+}
+.board img {
+  width: 150px; /* Defina a largura */
+  height: 200px; /* Defina a altura */
+  object-fit: cover; /* Ajusta a imagem dentro do contêiner */
+  margin: 10px; /* Espaçamento entre imagens */
+  border-radius: 8px; /* Opcional: bordas arredondadas */
+}
+
+#cards {
+  margin: 10px;
+  padding: 10px;
+}
+
+img {
+  margin: 10px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  z-index: 1000;
+}
+
+.butao-dificl {
+  background-color: #ff9900; /* Cor laranja */
+  color: #1a1a40; /* Texto azul escuro */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 10%;
+}
+  button:hover {
+  background-color: #cc7a00; /* Tom mais escuro ao passar o mouse */
+}
+
